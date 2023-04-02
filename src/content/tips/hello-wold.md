@@ -1,9 +1,10 @@
 ---
 title: 'Hello World'
-pubDate: '2023-04-02'
+pubDate: '2023-04-04'
 description: 'Hello World this is my first recommendation'
-image: ''
+image: 'https://api.lorem.space/image/fashion?w=640&h=480&r=3027'
 tags: ['astro', 'javascript']
+layout: '../../layouts/Post.astro'
 ---
 
 Lorem fistrum diodenoo a wan se calle ustée amatomaa de la pradera. A wan la caidita ese hombree torpedo no puedor pecador mamaar jarl está la cosa muy malar la caidita ese que llega. Te va a hasé pupitaa la caidita quietooor al ataquerl por la gloria de mi madre benemeritaar mamaar hasta luego Lucas.

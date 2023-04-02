@@ -1,11 +1,12 @@
 ---
 export interface Props {
+  slug: string;
   tags: string[];
   time: string;
   title: string;
 }
 
-const { tags, time, title } = Astro.props;
+const { slug, tags, time, title } = Astro.props;
 ---
 
 <article
@@ -16,7 +17,7 @@ const { tags, time, title } = Astro.props;
       {time}
     </time>
 
-    <a href="#">
+    <a href={`/post/${slug}`}>
       <h3 class="mt-0.5 text-lg font-medium text-gray-900">
         {title}
       </h3>
