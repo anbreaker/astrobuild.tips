@@ -1,6 +1,11 @@
 ---
 import { getCollection } from 'astro:content';
+
+import { Header } from '../../components/Header';
 import BaseMD from '../../layouts/BaseMD.astro';
+import Footer from '../../components/Footer.vue';
+import Social from '../../components/Social.vue';
+import HeaderTop from '../../components/HeaderTop';
 
 export async function getStaticPaths() {
   const posts = await getCollection('tips');
@@ -15,6 +20,12 @@ const post = Astro.props;
 const { Content } = await post.render();
 ---
 
-<BaseMD>
+<BaseMD title="">
+  <HeaderTop client:load />
+  <Header title="AstroBuilds.tips React" />
+
   <Content />
+
+  <Social />
+  <Footer />
 </BaseMD>
